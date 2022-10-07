@@ -16,13 +16,9 @@ root.render(
     <Routes>
       <Route path='/' element={<Outline />}>
         <Route index element={<Home />}></Route>
-
-        <Route path='/products' element={<Products />}>
-        </Route>
-          <Route path='/products/:id' element={<Product />} ></Route>
-
-        <Route path='/about' element={<About />}></Route>
-
+        <Route path='products' element={<Products />}></Route>
+        <Route path='products/:id' element={<Product />} ></Route>
+        <Route path='about' element={<About />}></Route>
       </Route>
     </Routes>
   </BrowserRouter>
